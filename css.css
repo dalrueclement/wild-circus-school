@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Lato', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* BODY */
+
+
+
+.warp {
+width: 1200px;
+margin: 0 auto;
+position: relative;
+}
+
+/* HEADER */
+header{
+overflow: hidden;
+height: 78px;
+}
+
+header .logo{
+float: left;
+margin-top: 20px;
+}
+
+header ul{
+float:right;
+margin-top: 32px;
+}
+
+header ul li {
+float: left;
+margin-right: 50px;
+}
+
+header ul li:last-child {
+margin-right: 0px;
+}
+
+header ul li a {
+color:black;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+
+header ul li a:hover:before {
+content: "";
+display: block;
+height: 2px;
+position: relative;
+margin-top: -7px;
+margin-bottom: 5px;
+width: 100%;
+background: #52151d none repeat scroll 0 0;
+}
+
+.both-nav-active:before {
+content: "";
+display: block;
+height: 2px;
+position: relative;
+margin-top: -7px;
+margin-bottom: 5px;
+width: 100%;
+background: #52151d none repeat scroll 0 0;
+}
+
+header ul .facebook {
+margin-right: 30px;
+}
+
+header ul .facebook a:hover:before, header ul .email a:hover:before{
+display: none;
+}
+
+.main-horizontal-nav {
+overflow:hidden;
+}
+
+
+.main-horizontal-nav-fixed {
+  background: white none repeat scroll 0 0;
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  padding-bottom: 15px;
+  top:0px;
+  transition: all 0.5s linear 0s;
+  z-index:9999;
+}
+
+/* CONTENT */
+
+#presentation {
+height: 350px;
+background: url(../img/lion-presentation.jpg) no-repeat center 0 fixed;
+background-size: 100%;
+color:white;
+width: 100%;
+}
+
+#presentation .history{
+float:right;
+text-align: center;
+width: 460px;
+}
+
+#presentation h1 {
+font-size: 35px;
+text-transform: uppercase;
+margin-top: 60px;
+margin-bottom: 30px;
+}
+
+#presentation p ,#magic p ,.acro p , #animals p {
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+}
+
+#magic {
+text-align: center;
+background: url("../img/magic.png") no-repeat center bottom;
+height: 370px;
+}
+
+#magic h1 , .acro h1 , #animals h1 {
+font-size: 25px;
+color: #52151d; 
+text-transform: uppercase;
+margin-top: 30px;
+margin-bottom: 50px;
+}
+
+#acrobatics {
+background: url(../img/acrobate.jpg) no-repeat center center fixed;
+background-size: cover;
+height: 681px;
+overflow: hidden;
+}
+
+.acro {
+background-color: rgba(255, 255, 255, 0.8);
+width: 625px;
+border:2px solid #52151d;
+height: 415px;
+margin: 133px auto 0;
+text-align: center;
+
+}
+.animated {
+    visibility: hidden;
+} 
+
+.visible {
+    visibility: visible !important;
+}
+
+
+.acro p {
+padding: 0 30px;
+}
+
+.acro img {
+margin-top: 30px;
+}
+
+
+#animals {
+height: 400px;
+overflow: hidden;
+background: url(../img/etoile.jpg) no-repeat center 0 fixed;
+width: 100%;
+background-size: 100%;
+}
+
+.ani {
+width: 625px;
+margin: 0 auto;
+text-align: center;
+}
+
+#animals .ani h1{
+margin-top: 100px;
+}
+#animals img {
+    position: absolute;
+    right: -52px;
+    top: -90px;
+}
+
+/* FOOTER */
+
+footer {
+background-color:#52151d;
+height: 500px;
+overflow: hidden;
+}
+
+.footer {
+background: url(../img/footer.jpg) no-repeat center bottom fixed;
+background-size: 100%;
+height: 400px;
+margin-top: 50px;
+overflow: hidden;
+}
+
+footer p {
+text-align: center;
+color:white;
+margin-top: 15px;
+}
+
+.fashion-style {
+font-size:24px;
+background:url(../img/foot-news.png) no-repeat center 20px;
+text-align:center;
+color:white;
+padding-top:20px;
+margin-top: 115px;
+}
+
+.input-box {
+	width:268px;
+	text-align:center;
+	margin:0 auto;
+}
+
+.subscribe__field {
+margin-top: 16px;
+width:100%;
+border:white 2px solid;
+background:none;
+color:white;
+text-align:center;
+height:28px;
+font-style:italic;
+font-family:"constan";
+}
+
+.subscribe__btn {
+margin-top: 16px;
+width:100%;
+background:white;
+color:black;
+text-align:center;
+height:28px;
+border-bottom:	3px solid white;
+border-top:0px;
+border-left:0px;
+border-right:0px;
+font-family:"constan";
+box-shadow:none;
+font-size:16px;
+}
+
+.subscribe__btn:hover {
+border-bottom:	3px solid #e74c3c;
+cursor:pointer;
+}
